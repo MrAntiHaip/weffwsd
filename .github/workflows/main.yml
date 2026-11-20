@@ -1,0 +1,35 @@
+name: Build Fabric 1.20.1 Mod (JAR + ZIP)
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java 17 (Temurin)
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Setup Gradle & Build Fabric Mod
+        uses: gradle/actions/setup-gradle@v3
+        with:
+          arguments: build
+
+      - name: Upload Ready-to-Play Mod JAR & ZIP Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Dima-Ulyana-Fabric-1.20.1-Mod
+          path: |
+            build/libs/*.jar
+            !build/libs/*-sources.jar
