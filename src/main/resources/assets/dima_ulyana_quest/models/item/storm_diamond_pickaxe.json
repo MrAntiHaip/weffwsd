@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "dima_ulyana_quest:item/storm_diamond_pickaxe"
+  }
+}

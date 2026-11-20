@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EEE",
+    "IPI",
+    " G "
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "P": {
+      "item": "dima_ulyana_quest:basalt_crusher_pickaxe"
+    }
+  },
+  "result": {
+    "item": "dima_ulyana_quest:emerald_resonance_pickaxe",
+    "count": 1
+  }
+}

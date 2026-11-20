@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NDN",
+    "OPO",
+    " D "
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "O": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "P": {
+      "item": "dima_ulyana_quest:storm_diamond_pickaxe"
+    }
+  },
+  "result": {
+    "item": "dima_ulyana_quest:magma_colossus_pickaxe",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "dima_ulyana_quest:item/emerald_resonance_pickaxe"
+  }
+}

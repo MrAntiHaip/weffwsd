@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "ru.dimaulyana.quest.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "SoulboundCompassMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

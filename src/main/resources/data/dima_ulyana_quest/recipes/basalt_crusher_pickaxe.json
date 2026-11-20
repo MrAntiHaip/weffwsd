@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "IPI",
+    " C "
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:cobblestone"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "P": {
+      "item": "dima_ulyana_quest:dirt_pickaxe"
+    }
+  },
+  "result": {
+    "item": "dima_ulyana_quest:basalt_crusher_pickaxe",
+    "count": 1
+  }
+}
