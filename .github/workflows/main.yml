@@ -1,13 +1,10 @@
 name: Build Fabric 1.20.1 Mod (JAR + ZIP)
-
 on:
   push:
     branches: [ "main", "master" ]
   workflow_dispatch:
-
 permissions:
   contents: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,10 +18,13 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Setup Gradle & Build Fabric Mod
+      - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
         with:
-          arguments: build
+          gradle-version: '8.6'
+
+      - name: Build Fabric Mod
+        run: gradle build
 
       - name: Upload Ready-to-Play Mod JAR & ZIP Artifact
         uses: actions/upload-artifact@v4
